@@ -1,0 +1,73 @@
+.line1, .line2, .line3 {
+    margin-top: 5px;
+    background-color: white;
+    width:25px;
+    height:3px;
+    display:block;
+    position:relative;
+    opacity:1.0;
+    border-radius:15%;
+    transition: all .3s;
+
+    @mixin atMinimum {
+        background-color: black;
+    }
+}
+
+.line1.active {
+    transform: rotate(270deg);
+    opacity: 0;
+    top: 5px;
+    background-color: white;
+
+    @mixin atMinimum {
+        background-color: black;
+    }
+}
+
+.line2.active {
+    transform: rotate(45deg);
+    background-color: white;
+
+    @mixin atMinimum {
+        background-color: black;
+    }
+}
+
+.line3.active {
+    transform: rotate(-45deg);
+    top: -7px;
+    background-color: white;
+
+    @mixin atMinimum {
+        background-color: black;
+    }
+}
+
+#closebtn {
+    margin-top: 20px;
+    height: 25px;
+    width: 25px;	
+    position: relative;
+    text-decoration: none;
+    float: right;
+    font-size: 36px !important;
+    z-index: 100;
+    color: black;
+    cursor: pointer;
+    trainsition: background-position .3s;
+    display: block;
+
+    @mixin atMinimum {
+      display: none;
+    }
+}
+
+.modal {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  opacity: 0.2;
+  z-index: 1;
+}

@@ -1,0 +1,43 @@
+.c-stripe {
+    position: relative;
+    width: 110%;
+    height: 165px;
+    right: 50px;
+    background-color: #f5f5f5;
+    transform: rotate(3deg);
+    display: none;
+
+    @mixin atMinimum {
+        display: block;
+    }
+}
+
+.c-middle {
+    position: absolute;
+    background-color: #3d7187;
+    width: 100%;
+
+    @mixin atMinimum {
+        height: 200px;
+        width: 600px;
+    }
+
+    &__image {
+        position: absolute;
+        top: -65px;
+        left: 100px;
+
+        @mixin atMinimum {
+            top: -65px;
+            left: -10px;
+        }
+    }
+
+    &__copy {
+        padding: 20px;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        color: #f9fbec;
+        text-align: center;
+    }
+} 
