@@ -32,7 +32,7 @@ const config = {
     output: {
         // path is a built in node module
         // __dirname is a variable from node that gives us the
-        path: path.resolve(__dirname, 'temp', 'scripts'),
+        path: path.resolve(__dirname, 'docs', 'scripts'),
         // we can use "substitutions" in file names like [name] and [hash]
         // name will be `App` because that is what we used above in our entry
         filename: '[name].bundle.js'

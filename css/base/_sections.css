@@ -21,11 +21,10 @@
     height: 384px;
     background: white;
 }
-
 .o-section-three {
     width: 100%;
     height: 512px;
-    background: #dfe2db url('images/footer-bg.png') no-repeat center bottom;
+    background: #dfe2db url('../images/footer-bg.png') no-repeat center bottom;
     background-size: contain;
     z-index: 10;
 }

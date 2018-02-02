@@ -9,6 +9,6 @@ close.addEventListener("click", function() {
     menuIcon[i].classList.toggle("active");
   } 
 });
+ 
 
-
-new MobileMenu();
+new MobileMenu(); 

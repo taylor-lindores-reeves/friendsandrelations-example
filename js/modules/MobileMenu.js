@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 class MobileMenu {
     constructor() {
       this.menu = document.getElementById('mobile-menu');
@@ -17,4 +19,4 @@ class MobileMenu {
     }
 }
 
-module.exports = MobileMenu;
+module.exports = MobileMenu; 

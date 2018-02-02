@@ -11,4 +11,4 @@ gulp.task('scripts', function(callback) {
 
 		console.log("Hooray, webpack completed!");
 	});
-});
+}); 

@@ -6,10 +6,10 @@ app = express(); // runs express
 
 app.set('views', './views'); // this is the folder where we keep our pug files
 app.set('view engine', 'pug'); // we use the engine pug, mustache or EJS work great too
-app.use(express.static(path.join(__dirname, "./")));
+app.use(express.static(path.join(__dirname, "./docs")));
 app.use('/', index);
 
-
+ 
 // If that above routes didnt work, we 404 them and forward to error handler
 app.use(errorHandlers.notFound);
 

@@ -15,5 +15,5 @@ gulp.task('styles', function(){
 	.pipe(concat('styles.bundle.css'))
     .pipe(minify())
     .pipe(cleanCss())
-	.pipe(gulp.dest('./'));
+	.pipe(gulp.dest('./docs/styles'));
 });

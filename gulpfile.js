@@ -4,8 +4,10 @@ const gulp = require('gulp');
       nodemon = require('gulp-nodemon');
       reload = browserSync.reload;
 
+
 require('./gulp/tasks/styles');
 require('./gulp/tasks/scripts');
+require('./gulp/tasks/build');
 
 gulp.task('watch', ['sync'], function(){
     gulp.watch('./css/**/*.css', ['styles'], reload);
@@ -21,8 +23,11 @@ gulp.task('sync', ['browser-sync'], function() {
 });
 
 gulp.task('browser-sync', ['nodemon'], function() {
-    browserSync.init(null, {
-        proxy: "http://localhost:5000",
+    browserSync.init({
+        notify: false,
+        server: {
+            baseDir: './routes'
+        },
         open: false
     });
 });
