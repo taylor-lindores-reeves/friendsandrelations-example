@@ -4,6 +4,7 @@ path = require('path'),
 index = require('./routes/index'),
 app = express(); // runs express
 
+app.engine('pug', require('pug').__express)
 app.set('views', './views'); // this is the folder where we keep our pug files
 app.set('view engine', 'pug'); // we use the engine pug, mustache or EJS work great too
 app.use(express.static(path.join(__dirname, "./docs")));
